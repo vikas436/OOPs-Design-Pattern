@@ -17,7 +17,7 @@ class Singleton {
     }
 }
 
-public class Singleton {
+public class SingletonDesign {
     public static void main(String args[]) {
         Singleton singleton = Singleton.getInstance();
         singleton.singletonFun();
