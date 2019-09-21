@@ -1,0 +1,38 @@
+package com.designpattern;
+
+public class BuilderPattern {
+    private String name;
+    private String type;
+    private Integer id;
+
+    public BuilderPattern setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public BuilderPattern setType(String type) {
+        this.type = type;
+        return this;
+    }
+
+    public BuilderPattern setId(Integer id) {
+        this.id = id;
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return "BuilderPattern{" +
+                "name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", id=" + id +
+                '}';
+    }
+
+    public static void main(String args[]) {
+        BuilderPattern builderPattern = new BuilderPattern();
+        builderPattern.setId(1).setName("builder").setType("pattern");
+        System.out.println(builderPattern.toString());
+
+    }
+}
